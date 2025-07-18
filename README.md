@@ -116,3 +116,20 @@ The full pipeline consists of the following stages:
 - Matching is supervised using **triplet loss**.
 
 ---
+## 🎆 Results
+
+Generation:
+
+![Pre-trained generation](assets/gen_pretrained.png)
+Pre-trained generation
+
+Segmentation:
+
+![Original segmentation](assets/output0000029.png)
+Original segmentation
+
+![Pretrained segmentation](assets/seg_pretrained.png)
+Pretrained segmentation
+
+![Segmentation result](assets/seg_6_scelta.png)
+Segmentation result

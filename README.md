@@ -19,6 +19,7 @@ The full pipeline consists of the following stages:
 1. **Synthetic Satellite Generation**  
    - 🔍 Ground image ➝ VisualCLIP encoder (from Openai, pretrained)
    - 🌀 VisualCLIP features ➝ DiT (from Meta, pretrained on ImageNet) ➝ Synthetic Aerial Image
+     
        Reference: https://arxiv.org/pdf/2212.09748
    
    Normally a DiT receives word tokens as inputs. In this case, since the input needed to be an image, the embedding layer had to be changed to a VisualCLIP.
@@ -30,6 +31,7 @@ The full pipeline consists of the following stages:
 
 3. **Semantic Segmentation**  
    - 🗺️ Synthetic aerial ➝ SegFormer-B3 (pretrained on ADE20K) ➝ Segmentation map
+     
      Reference: https://arxiv.org/pdf/2105.15203
 
      Comparing different models of the same family led to the choice of the b3 model. An intermediate model which is not too small to be capable of capturing relevant features,

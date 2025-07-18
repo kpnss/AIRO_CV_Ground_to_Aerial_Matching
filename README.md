@@ -134,3 +134,5 @@ Pretrained segmentation
 
 ![Segmentation result](assets/seg_6_scelta.png)
 Segmentation result
+
+My segmentation architecture, finetuned on CVUSA but pretrained on ADE20K, has a mIoU metric of 39. The same model, as released by its autors performs 49 on ADE20K.

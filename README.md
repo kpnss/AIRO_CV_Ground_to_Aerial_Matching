@@ -112,7 +112,8 @@ The full pipeline consists of the following stages:
 
 - `VGG_G`, `VGG_S`, `VGG_A`, and `VGG_C` are VGG16 backbones.
 - VGG_A and VGG_C **share weights**.
-- FeatureFusionNets (FFN) project feature concatenations into a shared embedding space.
+- All VGGs are pre-trained using ImageNet and are only finetuned.
+- FeatureFusionNets (FFN) project feature concatenations into a shared embedding space and trained from scratch.
 - Matching is supervised using **triplet loss**.
 
 ---

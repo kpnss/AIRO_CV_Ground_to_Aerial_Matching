@@ -43,7 +43,7 @@ The full pipeline consists of the following stages:
                |
                v
          +-------------+
-         |  VisualCLIP |
+         |  VisualCLIP |  ← Pretrained (Openai)
          |   Encoder   |
          +-------------+
                |

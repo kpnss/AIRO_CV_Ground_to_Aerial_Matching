@@ -37,6 +37,37 @@ The full pipeline consists of the following stages:
      Comparing different models of the same family led to the choice of the b3 model. An intermediate model which is not too small to be capable of capturing relevant features,
      nor too big to make it difficult to train. The model was pretrained on ADE20K which is a great dataset for this task since it comprehends urban and aerial views.
 
+---
+
+          Ground Image
+              (G)
+               |
+               v
+         +-------------+
+         |  VisualCLIP |
+         |   Encoder   |
+         +-------------+
+               |
+      Visual Feature Vector
+               |
+               v
+         +-------------+
+         |     DiT     |  ← Pretrained on ImageNet (Meta)
+         +-------------+
+               |
+   Synthetic Aerial Image (A)
+               |
+               v
+       +------------------+
+       |  SegFormer B3    |  ← Pretrained on ADE20K
+       | Semantic Segment |
+       +------------------+
+               |
+               v
+     Segmented Aerial Image (S)
+
+---
+
 4. **Joint Feature Matching**  
    - Input:  
      - Ground image (G)  

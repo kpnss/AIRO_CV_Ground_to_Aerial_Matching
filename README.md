@@ -35,7 +35,7 @@ The full pipeline consists of the following stages:
      Reference: https://arxiv.org/pdf/2105.15203
 
      Comparing different models of the same family led to the choice of the b3 model. An intermediate model which is not too small to be capable of capturing relevant features,
-     nor too big to make it difficult to train. The model was pretrained on ADE20K which is a great dataset for this task since it comprehends urban and aerial views.
+     nor too big to make it difficult to train (https://huggingface.co/nvidia/segformer-b3-finetuned-ade-512-512). The model was pretrained on ADE20K which is a great dataset for this task since it comprehends        urban and aerial views. The training lasted 60 epochs, using a ReduceLROnPlateau scheduler and AdamW as the optimizer. CrossEntropyLoss was the chosen loss function (basically we used the techniques       suggested by the authors). Finally, due to hardware limitation, batch size was only 6.
 
 ---
           Ground Image

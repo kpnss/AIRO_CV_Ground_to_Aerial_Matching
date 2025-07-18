@@ -38,7 +38,6 @@ The full pipeline consists of the following stages:
      nor too big to make it difficult to train. The model was pretrained on ADE20K which is a great dataset for this task since it comprehends urban and aerial views.
 
 ---
-
           Ground Image
               (G)
                |
@@ -55,7 +54,7 @@ The full pipeline consists of the following stages:
          |     DiT     |  ← Pretrained on ImageNet (Meta)
          +-------------+
                |
-   Synthetic Aerial Image (A)
+    Synthetic Aerial Image (A)
                |
                v
        +------------------+
@@ -65,8 +64,9 @@ The full pipeline consists of the following stages:
                |
                v
      Segmented Aerial Image (S)
-
+     
 ---
+
 
 4. **Joint Feature Matching**  
    - Input:  

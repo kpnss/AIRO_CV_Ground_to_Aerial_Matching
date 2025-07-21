@@ -119,7 +119,8 @@ The full pipeline consists of the following stages:
 ## 🎆 Results
 
 Generation:
-![Original Satellite] (assets/input0000008.png)
+
+![Original Satellite](assets/input0000008.png)
 Original satellite
 
 ![Pre-trained generation](assets/unet_pretrained.png)

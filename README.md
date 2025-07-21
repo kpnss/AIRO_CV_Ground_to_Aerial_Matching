@@ -9,8 +9,17 @@ It combines synthetic satellite image generation, semantic segmentation, and a j
 
 Matching ground-level photos to satellite imagery is challenging due to drastic perspective and scale differences. 
 This project tackles this by generating synthetic aerial views from ground photos, segmenting them, and learning a joint representation using a contrastive approach.
+The goal is to create an intermediate representation allowing a direct matching between a streetview image and its corresponding satellite image, without using any other data (e.g. GPS).
+
+Given a streetview image (360°) and the corresponding satellite they get transformed and used to create a new satellite image. Then it gets segmented and now goes through 2 networks allowing the matching to be robust.
 
 ---
+
+## 🗂️ Dataset
+
+I used a version of CVUSA (Cross-view USA) dataset which is composed of streetview images and satellite images both standard format and polarmap, respectively with segmentation map.
+
+This version of the Dataset can be found [here](https://drive.google.com/file/d/1c1hKJ7xBV4LbGcdQdotpHg-S18BRQ_Vy/view)
 
 ## 🧭 Pipeline
 

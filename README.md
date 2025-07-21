@@ -50,7 +50,7 @@ The full pipeline consists of the following stages:
                |
                v
          +-------------+
-         |     DiT     |  ← Pretrained on ImageNet (Meta)
+         |     Unet     |  ← Pretrained Stable Diffusion
          +-------------+
                |
     Synthetic Aerial Image (A)

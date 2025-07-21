@@ -120,7 +120,7 @@ The full pipeline consists of the following stages:
 
 Generation:
 
-![Pre-trained generation](assets/gen_pretrained.png)
+![Pre-trained generation](assets/unet_pretrained.png)
 Pre-trained generation
 
 Segmentation:

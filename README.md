@@ -18,16 +18,15 @@ The full pipeline consists of the following stages:
 
 1. **Synthetic Satellite Generation**  
    - 🔍 Ground image ➝ VisualCLIP encoder (from Openai, pretrained)
-   - 🌀 VisualCLIP features ➝ DiT (from Meta, pretrained on ImageNet) ➝ Synthetic Aerial Image
+   - 🌀 VisualCLIP features ➝ Unet (pretrained Stable Diffusion) ➝ Synthetic Aerial Image
      
-       Reference: https://arxiv.org/pdf/2212.09748
+       Reference: https://huggingface.co/blog/stable_diffusion
    
-   Normally a DiT receives word tokens as inputs. In this case, since the input needed to be an image, the embedding layer had to be changed to a VisualCLIP.
-   VisualCLIP was frozen and did not undergo any finetuning. Similarly the VAEncoder which is part of DiT was frozen.
+   Normally a Unet receives word tokens as inputs. In this case, since the input needed to be an image, the embedding layer had to be changed to a VisualCLIP.
+   VisualCLIP was frozen and did not undergo any finetuning. Similarly the VAEncoder which is part of Stable Diffusion was frozen.
    Both the encoders were of course pretrained. VisualClip's training is openai/clip-vit-base-patch32 which is a training on publicly available image-caption data (https://huggingface.co/openai/clip-vit-base-       patch32).
-   The latter was a default choice embedding by Meta team.
-   The DiT model chosen to tackle this task was a DiT-XL/2 which is a rather big model but not the biggest of its family. It was chosen since the task is quite complex.
-   Here it is possible to find more informations https://github.com/facebookresearch/DiT?tab=readme-ov-file.
+   The latter was a default choice embedding by Meta team. 
+   However total loss is computed by summing (proportionally) classic loss (between target and generated) but also Clip loss and Vae loss.
 
 3. **Semantic Segmentation**  
    - 🗺️ Synthetic aerial ➝ SegFormer-B3 (pretrained on ADE20K) ➝ Segmentation map

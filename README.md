@@ -34,7 +34,7 @@ The full pipeline consists of the following stages:
    Normally a Unet receives word tokens as inputs. In this case, since the input needed to be an image, the embedding layer had to be changed to a VisualCLIP.
    VisualCLIP was frozen and did not undergo any finetuning. Similarly the VAEncoder which is part of Stable Diffusion was frozen.
    Both the encoders were of course pretrained. VisualClip's training is openai/clip-vit-base-patch32 which is a training on publicly available image-caption data (https://huggingface.co/openai/clip-vit-base-       patch32).
-   The latter was a default choice embedding by Meta team. 
+   The latter was a default choice embedding by Stable Diffusion team. 
    However total loss is computed by summing (proportionally) classic loss (between target and generated) but also Clip loss and Vae loss.
 
 3. **Semantic Segmentation**  

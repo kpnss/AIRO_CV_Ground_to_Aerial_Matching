@@ -4,8 +4,7 @@ Checkpoints used in inference time:
 
 - 🧠 **Segmentation:** [SegFormer](https://drive.google.com/file/d/1fAvQaAsPdoPOABiiGqGx20zdV7woNs_v/view?usp=sharing)
 - ⚙️ **Generation Unet:** [Link al checkpoint di Generation Unet](https://drive.google.com/file/d/1E23j4ga65Fha15P92DWSf0LckHTBq_o4/view?usp=sharing)
-- 🖼️ **VGG (per 4):** [Link al checkpoint VGG (per 4)](https://example.com/vgg_checkpoint)
-- ➕ **FFN (per 2):** [Link al checkpoint FFN (per 2)](https://example.com/ffn_checkpoint)
+- 🖼️ **VGG (per 4)** ➕ **FFN (per 2):** [Link al checkpoint](https://drive.google.com/drive/folders/11La9C4Gu4PII1rz537N1cGLfHUdv9RPb?usp=sharing)
 
 ## 📚 Usage
 

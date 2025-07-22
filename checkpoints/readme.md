@@ -3,7 +3,7 @@
 Checkpoints used in inference time:
 
 - 🧠 **Segmentation:** [SegFormer](https://drive.google.com/file/d/1fAvQaAsPdoPOABiiGqGx20zdV7woNs_v/view?usp=sharing)
-- ⚙️ **Generation Unet:** [Link al checkpoint di Generation Unet](https://example.com/generation_unet_checkpoint)
+- ⚙️ **Generation Unet:** [Link al checkpoint di Generation Unet](https://drive.google.com/file/d/1E23j4ga65Fha15P92DWSf0LckHTBq_o4/view?usp=sharing)
 - 🖼️ **VGG (per 4):** [Link al checkpoint VGG (per 4)](https://example.com/vgg_checkpoint)
 - ➕ **FFN (per 2):** [Link al checkpoint FFN (per 2)](https://example.com/ffn_checkpoint)
 
